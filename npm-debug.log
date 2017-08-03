@@ -25,14 +25,14 @@
 13 silly mapToRegistry uri https://registry.npmjs.org/ngrok
 14 verbose request uri https://registry.npmjs.org/ngrok
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 3:03:55 PM
-17 verbose request id a8e9e9a8a58a5170
+16 info attempt registry request try #1 at 3:10:08 PM
+17 verbose request id 0400b2b2aafb03ea
 18 http request GET https://registry.npmjs.org/ngrok
 19 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND iedub98 iedub98:8080
-20 info attempt registry request try #2 at 3:04:07 PM
+20 info attempt registry request try #2 at 3:10:21 PM
 21 http request GET https://registry.npmjs.org/ngrok
 22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND iedub98 iedub98:8080
-23 info attempt registry request try #3 at 3:05:09 PM
+23 info attempt registry request try #3 at 3:11:23 PM
 24 http request GET https://registry.npmjs.org/ngrok
 25 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND iedub98 iedub98:8080
 25 silly fetchPackageMetaData     at ClientRequest.onError (C:\Program Files\nodejs\node_modules\npm\node_modules\request\node_modules\tunnel-agent\index.js:176:17)

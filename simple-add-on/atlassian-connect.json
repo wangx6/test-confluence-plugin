@@ -14,7 +14,7 @@
      "modules": {
          "generalPages": [
              {
-                 "url": "/helloworld.html",
+                 "url": "https://raw.githubusercontent.com/wangx6/test-confluence-plugin/master/simple-add-on/helloworld.html",
                  "key": "hello-world",
                  "location": "system.top.navigation.bar",
                  "name": {
