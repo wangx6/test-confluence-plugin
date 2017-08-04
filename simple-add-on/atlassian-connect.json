@@ -2,9 +2,9 @@
      "name": "Hello World",
      "description": "Atlassian Connect add-on",
      "key": "com.example.myaddon",
-     "baseUrl": "https://cdn.rawgit.com",
+     "baseUrl": "https://rawgit.com",
      "vendor": {
-         "name": "Example, Inc.",
+         "name": "Deloitte Digital Ireland",
          "url": "http://example.com"
      },
      "authentication": {
