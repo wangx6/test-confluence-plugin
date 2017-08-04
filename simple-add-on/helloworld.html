@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-     <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.9.12/css/aui.min.css" media="all">
- </head>
- <body>
-     <section id="content" class="ac-content">
-         <div class="aui-page-header">
-             <div class="aui-page-header-main">
-                 <h1>Hello World</h1>
-             </div>
-         </div>
-     </section>
 
-     <script id="connect-loader" data-options="sizeToParent:true;">
-         (function() {
-             var getUrlParam = function (param) {
-                 var codedParam = (new RegExp(param + '=([^&]*)')).exec(window.location.search)[1];
-                 return decodeURIComponent(codedParam);
-             };
+<head>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.9.12/css/aui.min.css" media="all">
+</head>
 
-             var baseUrl = getUrlParam('xdm_e') + getUrlParam('cp');
-             var options = document.getElementById('connect-loader').getAttribute('data-options');
+<body>
+    <section id="content" class="ac-content">
+        <div class="aui-page-header">
+            <div class="aui-page-header-main">
+                <h1>Hello World</h1>
+            </div>
+        </div>
+    </section>
+    <script id="connect-loader" data-options="sizeToParent:true;">
+    (function() {
+        var getUrlParam = function(param) {
+            var codedParam = (new RegExp(param + '=([^&]*)')).exec(window.location.search)[1];
+            return decodeURIComponent(codedParam);
+        };
 
-             var script = document.createElement("script");
-             script.src = baseUrl + '/atlassian-connect/all.js';
+        var baseUrl = getUrlParam('xdm_e') + getUrlParam('cp');
+        var options = document.getElementById('connect-loader').getAttribute('data-options');
 
-             if(options) {
-                 script.setAttribute('data-options', options);
-             }
+        var script = document.createElement("script");
+        script.src = baseUrl + '/atlassian-connect/all.js';
 
-             document.getElementsByTagName("head")[0].appendChild(script);
+        if (options) {
+            script.setAttribute('data-options', options);
+        }
 
-             console.log('hwlloasjdl;jasdl;jasdjlaskjdl;asj;lajsd;flkajsl;fjasl;');
+        document.getElementsByTagName("head")[0].appendChild(script);
+
+        console.log('hwlloasjdl;jasdl;jasdjlaskjdl;asj;lajsd;flkajsl;fjasl;');
 
 
-            $.ajax({
-                type: "POST",
-                // url: "https://70kiss.atlassian.net/confluence:80/rest/api/content/",
-                url: "https://yinghan.atlassian.net/wiki/rest/api/content/",
-                dataType: "json",
-                async: false,
-                data: JSON.stringify(jsondata),
-                success: function(data) {
-                    alert('asdasf');
-                    console.log(data);
-                },
-                error: function(xhr, errorText) {
-                    console.log(errorText);
-                    console.log(xhr);
-                }
-            });
+        $.ajax({
+            type: "POST",
+            // url: "https://70kiss.atlassian.net/confluence:80/rest/api/content/",
+            url: "https://yinghan.atlassian.net/wiki/rest/api/content/",
+            dataType: "json",
+            async: false,
+            data: JSON.stringify(jsondata),
+            success: function(data) {
+                alert('asdasf');
+                console.log(data);
+            },
+            error: function(xhr, errorText) {
+                console.log(errorText);
+                console.log(xhr);
+            }
+        });
 
-       
-//pilli veera
-         })();
-     </script>
 
- </body>
+        //pilli veera
+    })();
+    </script>
+</body>
+
 </html>
