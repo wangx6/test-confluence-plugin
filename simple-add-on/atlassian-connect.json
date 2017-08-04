@@ -16,7 +16,7 @@
              {
                  "url": "https://cdn.rawgit.com/wangx6/test-confluence-plugin/master/simple-add-on/helloworld.html",
                  "key": "hello-world",
-                 "location": "system.header/bar",
+                 "location": "system.header/left",
                  "name": {
                      "value": "Greeting"
                  }
