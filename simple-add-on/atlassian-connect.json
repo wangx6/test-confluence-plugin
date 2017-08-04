@@ -2,7 +2,7 @@
      "name": "Hello World",
      "description": "Atlassian Connect add-on",
      "key": "com.example.myaddon",
-     "baseUrl": "https://yinghan.atlassian.net",
+     "baseUrl": "https://cdn.rawgit.com",
      "vendor": {
          "name": "Example, Inc.",
          "url": "http://example.com"
@@ -14,7 +14,7 @@
      "modules": {
          "generalPages": [
              {
-                 "url": "https://cdn.rawgit.com/wangx6/test-confluence-plugin/master/simple-add-on/helloworld.html",
+                 "url": "/wangx6/test-confluence-plugin/master/simple-add-on/helloworld.html",
                  "key": "hello-world",
                  "location": "system.header/left",
                  "name": {
