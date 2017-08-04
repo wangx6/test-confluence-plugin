@@ -31,32 +31,19 @@
 
              document.getElementsByTagName("head")[0].appendChild(script);
 
+             console.log('hwlloasjdl;jasdl;jasdjlaskjdl;asj;lajsd;flkajsl;fjasl;');
 
-
-            //This creates a page in a space.
-            var username = "wangx6@gmail.com";
-            var password = "xhgk9qey";
-            var jsondata = {
-                "type": "page",
-                "title": "ajax page",
-                "space": { "key": "70 ajax page" },
-                "body": { "storage": { "value": "<p>This is a new page</p>", "representation": "storage" } }
-            };
 
             $.ajax({
                 type: "POST",
                 // url: "https://70kiss.atlassian.net/confluence:80/rest/api/content/",
                 url: "https://yinghan.atlassian.net/wiki/rest/api/content/",
-                contentType: "text/plain",
                 dataType: "json",
                 async: false,
-                headers: {
-                    "Authorization": "Basic " + btoa(username + ":" + password)
-                },
                 data: JSON.stringify(jsondata),
-                success: function() {
-                    // alert('page saved');
-                    console.log('Page saved!');
+                success: function(data) {
+                    alert('asdasf');
+                    console.log(data);
                 },
                 error: function(xhr, errorText) {
                     console.log(errorText);
